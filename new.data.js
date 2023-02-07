@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = '/Users/kostahorysev/Documents/Unreal Projects/new/Binaries/HTML5/new.data';
-    var REMOTE_PACKAGE_BASE = 'new.data';
+    var PACKAGE_NAME = 'https://dl.dropboxusercontent.com/s/x4ydrj249gxdegb/new.data?dl=0';
+    var REMOTE_PACKAGE_BASE = 'https://dl.dropboxusercontent.com/s/x4ydrj249gxdegb/new.data?dl=0';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
